@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app.kubernetes.io/instance: existingsa-feb27
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: existingsa-feb27
+  name: existingsa-feb27
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
